@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.jdbc.lob.non_contextual_creation: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/smart_assistant
+    username: abhishek
+    password: kurmi
+  jpa-generate-ddl: true
+
+cloud:
+  aws:
+    credentials:
+      accessKey: need_to_update_with_access_key
+      secretKey: need_to_update_with_secret_key
+    region:
+      static: ap-south-1
+
+smart-assistant:
+  bucket:
+    transcribe: need_to_update_with_bucket_name
